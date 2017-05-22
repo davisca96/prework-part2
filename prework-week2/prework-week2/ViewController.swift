@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var PushButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Tapped(_ sender: Any) {
+        PushButton.titleLabel = "Changed!"
+    }
 
 }
 
